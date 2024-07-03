@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+<!----------------------------------css---------------------------------------->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- -------------------------css end------------------------------------ -->
+</head>
+
+<body>
+
+  <!-- ---------------------------navbar start-------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container gx-3 ">
+
+            <a class="navbar-brand d-flex " href="#">
+              <img src="../images/logo.png" alt="Logo" width="60" height="40" class="d-inline-block align-text-top">
+                <h1 class="naem fs-5 ms-3 text-white">Weather </br><span>tagline goes here</span></h1>
+            </a>
+          </div>
+          <button class="navbar-toggler me-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-5 ml-3  mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active pe-5 " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-5  " href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-5  " href="#">livecameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-5 " href="#">photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-5 " href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+<!-- ----------------------navbar end------------------------------------- -->
+
+        <main class="interface">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+            <header class="d-flex justify-content-between align-items-center pt-4 mx-5">
+                <div class="bg-primary-subtle p-3 py-2 rounded-3 fw-bold text-white">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="location"></span>
+                </div>
+                <div class="">
+                    <div class="findInput position-relative">
+                        <input type="text" id="findLocation" class="searchInput form-control rounded-pill bg-primary-subtle"
+                            placeholder="Find your location" style="width: 400px; font-weight: 700;">
+                        <button
+                            class="findBtn btn btn-primary btn-sm position-absolute rounded-pill py-2 px-5 top-0 end-0 fw-bold">Search</button>
+                    </div>
+                </div>
+                <div class="bg-primary-subtle p-3 py-2 rounded-3 fw-bold">
+                    <span class="todayDate text-white"></span>
+                </div>
+              </div>
+            </div>
+            </header>
+
+
+
+
+<!-- -------------------------------sections start--------------------------------------------- -->
+            <section
+                class="today-weather pt-3 d-flex justify-content-center align-items-center mt-4 flex-column text-white w-75 m-auto">
+                <h1 class="cityName fw-bolder fs-3"></h1>
+                <h2 class="fw-bolder display-4 " id="weatherTemp"></h2>
+                <p id="weatherCondition" class="fw-semibold fs-5"></p>
+                
+                
+            </section>
+
+            <section>
+                <h2 class="fw-bold text-center fs-5 mt-3 text-white">Forecast</h2>
+                <div class="weatherCards py-2 px-3 d-flex justify-content-around">    
+                </div>
+                
+            </section>
+          </div>
+          </div>
+        </div>
+        </main>
+        
+        </main>
+<!-- -------------------------------sections end-------------------------------------------- -->
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <form action="#" class="subscribe-form">
+          <input type="text" placeholder="Enter your email to subscribe...">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div class="col-md-3 col-md-offset-1">
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <p class="colophon text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+</footer>
+
+<
+        
+ <!-- ------------------java script-------------------------- -->
+    <script src="../javascript/all.min.js"></script>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../javascript/main.js"></script>
+
+  
+</body>
+</html>
